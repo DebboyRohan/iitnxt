@@ -11,6 +11,9 @@ import {
   tesla,
   meta,
   qualcom,
+  bostondynamics,
+  spectrum,
+  garena,
 } from "../../assets/asset.js";
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
@@ -60,5 +63,20 @@ export const products = [
     title: "Qualcomm",
     link: "https://www.qualcomm.com",
     thumbnail: qualcom,
+  },
+  {
+    title: "Garena",
+    link: "https://www.garena.sg",
+    thumbnail: garena,
+  },
+  {
+    title: "Spectrum",
+    link: "https://www.spectrum.com",
+    thumbnail: spectrum,
+  },
+  {
+    title: "Boston Dynamics",
+    link: "https://www.bostondynamics.com",
+    thumbnail: bostondynamics,
   },
 ];

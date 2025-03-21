@@ -24,7 +24,9 @@ import ibm from "./ibm.png";
 import tesla from "./tesla.png";
 import meta from "./meta.png";
 import qualcom from "./qualcom.png";
-
+import garena from "./garena.png";
+import spectrum from "./spectrum.png";
+import bostondynamics from "./bostonDynamics.png";
 export const cardsData = [
   {
     id: 1,
@@ -61,4 +63,7 @@ export {
   tesla,
   meta,
   qualcom,
+  garena,
+  bostondynamics,
+  spectrum,
 };
