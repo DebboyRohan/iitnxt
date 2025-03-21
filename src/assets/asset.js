@@ -7,7 +7,7 @@ import graphicDesign from "./graphic-design.png";
 import iot from "./iot.png";
 import programming from "./programming.png";
 import vlsi from "./vlsi.png";
-import logo from "./logo.png";
+import logo from "./logo.jpeg";
 import customerSupport from "./customerSupport.png";
 import temp from "./temp.png";
 import hiw1 from "./hiw1.png";
@@ -27,6 +27,8 @@ import qualcom from "./qualcom.png";
 import garena from "./garena.png";
 import spectrum from "./spectrum.png";
 import bostondynamics from "./bostonDynamics.png";
+import rohan from "./rohan.png";
+import simha from "./simha.png";
 export const cardsData = [
   {
     id: 1,
@@ -66,4 +68,6 @@ export {
   garena,
   bostondynamics,
   spectrum,
+  rohan,
+  simha,
 };
