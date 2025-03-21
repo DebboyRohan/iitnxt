@@ -6,7 +6,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-transparent">
+    <div className="flex justify-center items-center min-h-screen bg-transparent mx-5">
       {/* Floating Card */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
