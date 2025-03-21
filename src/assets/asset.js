@@ -15,6 +15,16 @@ import hiw2 from "./hiw2.png";
 import hiw3 from "./hiw3.png";
 import defaultpic from "./defaultPic.png";
 import bgTeam from "./bg-team.jpg";
+import nvidia from "./nvidia.png";
+import intel from "./intel.png";
+import google from "./google.png";
+import microsoft from "./microsoft.png";
+import apple from "./apple.png";
+import ibm from "./ibm.png";
+import tesla from "./tesla.png";
+import meta from "./meta.png";
+import qualcom from "./qualcom.png";
+
 export const cardsData = [
   {
     id: 1,
@@ -42,4 +52,13 @@ export {
   hiw2,
   hiw3,
   defaultpic,
+  nvidia,
+  intel,
+  google,
+  microsoft,
+  apple,
+  ibm,
+  tesla,
+  meta,
+  qualcom,
 };
