@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { hiw1, hiw2, hiw3 } from "../../assets/asset.js";
 const HowItWorks = () => {
   return (
-    <section className="mx-10 relative bg-gradient-to-b from-blue-300 to-green-100 py-20 px-6 md:px-16 lg:px-24 text-gray-800 rounded-lg">
+    <section className="mx-5 relative bg-gradient-to-b from-blue-300 to-green-100 py-20 px-6 md:px-16 lg:px-24 text-gray-800 rounded-lg">
       {/* <div className="text-left mb-12">
         <h2 className="text-3xl text-center md:text-4xl font-bold">
           How It Works

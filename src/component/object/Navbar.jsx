@@ -1,23 +1,25 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "../ui/MovingBorder";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const handleClick = () => {
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }, 50);
   };
+
   return (
-    <nav className="bg-slate-800 text-white p-4 shadow-lg sticky top-5 z-50 md:mx-80 mx-10 rounded-lg">
+    <nav className="bg-slate-800 text-white p-4 shadow-lg sticky top-5 z-50 md:mx-80 mx-4 rounded-lg">
       <div className="flex justify-center items-center">
-        <div className="">
+        <div>
           <NavLink to="/" onClick={handleClick}>
-            {" "}
             <h1 className="font-extrabold text-xl">IITNxt</h1>
           </NavLink>
         </div>
-        <div className="container  mx-auto flex justify-center items-center">
+        <div className="container mx-auto flex justify-center items-center">
           <div>
             <button
               className="md:hidden text-2xl focus:outline-none"
@@ -43,12 +45,10 @@ function Navbar() {
                         isActive ? "text-green-200" : ""
                       }`
                     }
-                    onClick={
-                      (() => {
-                        setIsOpen(false);
-                      },
-                      handleClick)
-                    }
+                    onClick={() => {
+                      setIsOpen(false); // ✅ Close dropdown
+                      handleClick();
+                    }}
                   >
                     {item}
                   </NavLink>
