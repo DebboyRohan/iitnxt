@@ -26,7 +26,10 @@ function Footer() {
           <a href="#" className="hover:text-blue-400">
             <IconBrandFacebook size={28} />
           </a>
-          <a href="#" className="hover:text-pink-400">
+          <a
+            href="https://www.instagram.com/iit_nxt/"
+            className="hover:text-pink-400"
+          >
             <IconBrandInstagram size={28} />
           </a>
           <a href="#" className="hover:text-blue-300">
