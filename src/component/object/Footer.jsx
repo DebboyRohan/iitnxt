@@ -1,6 +1,7 @@
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandLinkedin,
   IconBrandTwitter,
 } from "@tabler/icons-react";
 import { logo } from "../../assets/asset.js";
@@ -23,7 +24,10 @@ function Footer() {
 
         {/* Social Icons Section */}
         <div className="flex space-x-4 mt-6 md:mt-0">
-          <a href="#" className="hover:text-blue-400">
+          <a
+            href="https://www.facebook.com/share/p/17x6NGKZyk/"
+            className="hover:text-blue-400"
+          >
             <IconBrandFacebook size={28} />
           </a>
           <a
@@ -32,8 +36,11 @@ function Footer() {
           >
             <IconBrandInstagram size={28} />
           </a>
-          <a href="#" className="hover:text-blue-300">
-            <IconBrandTwitter size={28} />
+          <a
+            href="http://www.linkedin.com/in/iit-nxt-7404a3359"
+            className="hover:text-blue-300"
+          >
+            <IconBrandLinkedin size={28} />
           </a>
         </div>
       </div>
