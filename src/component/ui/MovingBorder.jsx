@@ -6,8 +6,8 @@ import {
   useMotionTemplate,
   useMotionValue,
   useTransform,
-} from "motion/react";
-import { useRef } from "react";
+} from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 import { cn } from "../../lib/Utils";
 
 export function Button({
@@ -66,27 +66,59 @@ export const MovingBorder = ({
   ry,
   ...otherProps
 }) => {
-  const pathRef = useRef();
+  const pathRef = useRef(null);
   const progress = useMotionValue(0);
+  const [pathValid, setPathValid] = useState(false);
+
+  // Check if path is valid
+  useEffect(() => {
+    if (pathRef.current) {
+      try {
+        const length = pathRef.current.getTotalLength();
+        setPathValid(length > 0);
+      } catch (e) {
+        setPathValid(false);
+      }
+    }
+  }, []);
 
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength();
-    if (length) {
-      const pxPerMillisecond = length / duration;
-      progress.set((time * pxPerMillisecond) % length);
+    if (!pathValid) return;
+
+    try {
+      const length = pathRef.current?.getTotalLength();
+      if (length) {
+        const pxPerMillisecond = length / duration;
+        progress.set((time * pxPerMillisecond) % length);
+      }
+    } catch (e) {
+      console.error("Animation frame error:", e);
     }
   });
 
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
-  );
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
-  );
+  const x = useTransform(progress, (val) => {
+    if (!pathValid) return 0;
+    try {
+      return pathRef.current?.getPointAtLength(val).x || 0;
+    } catch (e) {
+      return 0;
+    }
+  });
+
+  const y = useTransform(progress, (val) => {
+    if (!pathValid) return 0;
+    try {
+      return pathRef.current?.getPointAtLength(val).y || 0;
+    } catch (e) {
+      return 0;
+    }
+  });
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+
+  if (!pathValid) {
+    return <div className="absolute inset-0">{children}</div>;
+  }
 
   return (
     <>

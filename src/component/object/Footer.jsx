@@ -25,7 +25,7 @@ function Footer() {
         {/* Social Icons Section */}
         <div className="flex space-x-4 mt-6 md:mt-0">
           <a
-            href="https://www.facebook.com/share/p/17x6NGKZyk/"
+            href="https://www.facebook.com/share/18u3BLnuBN/"
             className="hover:text-blue-400"
           >
             <IconBrandFacebook size={28} />
