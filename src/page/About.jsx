@@ -16,7 +16,7 @@ const About = () => {
       {/* IITNxt Logo */}
       <div className="flex justify-center">
         <motion.img
-          src={logo}
+          src="/iitnxtlogo.png"
           alt="IITNxt Logo"
           className="w-40 md:w-52"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -43,12 +43,24 @@ const About = () => {
           className="mt-4 text-lg leading-relaxed text-gray-700"
           variants={textVariants}
         >
-          At IITNxt, our mission is to empower young minds by providing
-          high-quality training and project opportunities that address
-          real-world challenges and contribute to societal welfare. We believe
-          in nurturing talent during the early stages of their educational
-          journey, especially among students from local engineering colleges, by
-          fostering collaboration with IITians.
+          IIT Nxt - Indian Innovators of Technology for Next Gen "Śikṣā
+          sārthakaṃ jīvanam" - Education for a Meaningful Life
+        </motion.p>
+
+        <motion.p
+          className="mt-4 text-lg leading-relaxed text-gray-700"
+          variants={textVariants}
+        >
+          IIT Nxt is a visionary initiative established to empower young minds
+          by fostering innovation and technological expertise. Founded by Ch.
+          Seshukumari, IIT Nxt is registered as a trust under the Andhra Pradesh
+          Trust Act, with the following registration details: (Trust ID No:
+          4-317-21-2025,Document No / Year: 21/25,CS No / Year: 23/2025) Our
+          mission is to shape the next generation of tech leaders through
+          hands-on learning, real-world projects, and mentorship from industry
+          experts and IITians. We aim to bridge the gap between theoretical
+          knowledge and practical implementation, guiding students to become
+          creators of impactful solutions for societal welfare.
         </motion.p>
 
         <motion.p
@@ -66,9 +78,17 @@ const About = () => {
           className="mt-4 text-lg leading-relaxed text-gray-700"
           variants={textVariants}
         >
-          At IITNxt, we offer workshops and projects across a variety of
-          high-demand fields to help you build skills and expertise that matter
-          in today’s world. Dive into the future with these exciting domains.
+          At IIT Nxt, we believe that every student has the potential to make a
+          difference. We are committed to transforming education into a journey
+          of exploration, creativity, and real-world problem-solving. Join us in
+          making your ideas come to life and leave a mark on the world!
+        </motion.p>
+        <motion.p
+          className="mt-4 text-lg leading-relaxed text-gray-700"
+          variants={textVariants}
+        >
+          <b>Our Motto</b>: 🌟 "Dream, Innovate, and Transform - Together, Let's
+          Build a Technological Future!"
         </motion.p>
       </motion.div>
 

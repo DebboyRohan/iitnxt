@@ -19,7 +19,7 @@ function Footer() {
 
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <img src={logo} alt="Company Logo" className="h-40" />
+          <img src="/iitnxtlogo.png" alt="Company Logo" className="h-40" />
         </div>
 
         {/* Social Icons Section */}

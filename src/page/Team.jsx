@@ -247,6 +247,8 @@ const Team = () => {
       role: "Academic Associate - Technology",
       image: defaultpic,
       institute: "IIT Bombay",
+      email: "rohan@example.com",
+      linkedin: "#",
     },
     {
       name: "M Simhachal",
