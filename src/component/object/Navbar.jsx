@@ -4,6 +4,7 @@ import { Button } from "../ui/MovingBorder";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProgramsOpen, setIsProgramsOpen] = useState(false);
 
   const handleClick = () => {
     setTimeout(() => {
@@ -59,6 +60,46 @@ function Navbar() {
                   </NavLink>
                 </li>
               ))}
+
+              {/* Programs Dropdown */}
+              <li className="relative">
+                <button
+                  onClick={() => setIsProgramsOpen(!isProgramsOpen)}
+                  className={`hover:text-green-200 hover:scale-110 transition-all duration-300 ease-in-out ${
+                    location.pathname === "/school" ||
+                    location.pathname === "/college"
+                      ? "text-green-200"
+                      : ""
+                  }`}
+                >
+                  Programs
+                  <span className="ml-1">&#9660;</span>
+                </button>
+                {isProgramsOpen && (
+                  <div className="absolute left-0 mt-2 w-48 bg-slate-800 rounded-md shadow-lg py-1 z-50">
+                    <NavLink
+                      to="/school"
+                      className="block px-4 py-2 hover:bg-slate-700 hover:text-green-200"
+                      onClick={() => {
+                        setIsProgramsOpen(false);
+                        handleClick();
+                      }}
+                    >
+                      School
+                    </NavLink>
+                    <NavLink
+                      to="/college"
+                      className="block px-4 py-2 hover:bg-slate-700 hover:text-green-200"
+                      onClick={() => {
+                        setIsProgramsOpen(false);
+                        handleClick();
+                      }}
+                    >
+                      College
+                    </NavLink>
+                  </div>
+                )}
+              </li>
             </ul>
 
             {/* Desktop Admin Button */}
@@ -95,6 +136,43 @@ function Navbar() {
                 </NavLink>
               </li>
             ))}
+
+            {/* Mobile Programs Dropdown */}
+            <li>
+              <button
+                onClick={() => setIsProgramsOpen(!isProgramsOpen)}
+                className="flex items-center justify-between w-full py-2"
+              >
+                <span>Programs</span>
+                <span>{isProgramsOpen ? "▲" : "▼"}</span>
+              </button>
+              {isProgramsOpen && (
+                <div className="ml-4 mt-2 space-y-2">
+                  <NavLink
+                    to="/school"
+                    className="block py-2 hover:text-green-200"
+                    onClick={() => {
+                      setIsOpen(false);
+                      setIsProgramsOpen(false);
+                      handleClick();
+                    }}
+                  >
+                    School
+                  </NavLink>
+                  <NavLink
+                    to="/college"
+                    className="block py-2 hover:text-green-200"
+                    onClick={() => {
+                      setIsOpen(false);
+                      setIsProgramsOpen(false);
+                      handleClick();
+                    }}
+                  >
+                    College
+                  </NavLink>
+                </div>
+              )}
+            </li>
           </ul>
         </div>
       </div>

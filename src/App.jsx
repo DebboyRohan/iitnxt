@@ -8,6 +8,9 @@ import About from "./page/About";
 import Team from "./page/Team";
 import Contact from "./page/Contact";
 import LoginPage from "./page/LoginPage";
+import Programs from "./page/Programs";
+import Schools from "./page/Schools";
+import Colleges from "./page/Colleges";
 const App = () => {
   return (
     <Router>
@@ -20,6 +23,9 @@ const App = () => {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/programs" element={<Programs />} /> */}
+          <Route path="/school" element={<Schools />} />
+          <Route path="/college" element={<Colleges />} />
         </Routes>
         <Footer />
       </div>
