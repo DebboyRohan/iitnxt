@@ -261,7 +261,7 @@ const Team = () => {
     {
       name: "Shriya Berelli ",
       role: "HR & operations",
-      image: defaultpic,
+      image: "/images/team/shriya.png",
       institute: "IIT Kharagpur",
       email: "rohan@example.com",
       linkedin: "#",

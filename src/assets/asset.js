@@ -29,6 +29,7 @@ import spectrum from "./spectrum.png";
 import bostondynamics from "./bostonDynamics.png";
 import rohan from "./rohan.png";
 import simha from "./simha.png";
+import shriya from "./shriya.jpeg";
 export const cardsData = [
   {
     id: 1,
@@ -70,4 +71,5 @@ export {
   spectrum,
   rohan,
   simha,
+  shriya,
 };
