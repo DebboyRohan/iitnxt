@@ -30,6 +30,7 @@ import bostondynamics from "./bostonDynamics.png";
 import rohan from "./rohan.png";
 import simha from "./simha.png";
 import shriya from "./shriya.jpeg";
+import mentalHealth from "./mentalHealth.jpeg";
 export const cardsData = [
   {
     id: 1,
@@ -72,4 +73,5 @@ export {
   rohan,
   simha,
   shriya,
+  mentalHealth,
 };

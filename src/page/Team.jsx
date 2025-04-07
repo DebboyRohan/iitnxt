@@ -245,10 +245,11 @@ const Team = () => {
     {
       name: "Pavan Tummala ",
       role: "Academic Associate - Technology",
-      image: defaultpic,
+      image: "/images/team/pavan.jpeg",
       institute: "IIT Kharagpur",
-      email: "rohan@example.com",
-      linkedin: "#",
+      email: "tummalapavan10@gmail.com",
+      linkedin:
+        "https://www.linkedin.com/in/pavan-tummala?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLu9KrqvSSc%2BrtQUcm572Qg%3D%3D",
     },
     {
       name: "M Simhachal",
@@ -263,13 +264,14 @@ const Team = () => {
       role: "HR & operations",
       image: "/images/team/shriya.png",
       institute: "IIT Kharagpur",
-      email: "rohan@example.com",
-      linkedin: "#",
+      email: "Sriyabeerelli@gmail.com",
+      linkedin:
+        "https://www.linkedin.com/in/beerelli-shriya-ab683825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       name: "Pandu Jarapla ",
       role: "Digital Outreach Associate & student ambassador ",
-      image: defaultpic,
+      image: "/images/team/pandu.jpeg",
       institute: "IIT Kharagpur",
       email: "pandunaik17835@gmail.com",
       linkedin:
@@ -278,17 +280,17 @@ const Team = () => {
     {
       name: "Sanjay Jaiswal ",
       role: " Senior Consultant - Strategy",
-      image: defaultpic,
+      image: "/images/team/sanjay.jpeg",
       institute: "IIT kanpur",
-      email: "rohan@example.com",
+      email: "hriitnxt@gmail.com",
       linkedin: "#",
     },
     {
       name: "Madimisseti Srinivas ",
       role: "Acadmic Advisor(Faculty @ E&ECE - NIT AP )",
-      image: defaultpic,
+      image: "/images/team/srinivas.jpeg",
       institute: "National Institute of Technology ,AP",
-      email: "msrinivas@iitkgp.ac.in",
+      email: "maddimsetti34@gmail.com",
       linkedin: "#",
     },
   ];

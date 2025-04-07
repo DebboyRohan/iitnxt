@@ -91,19 +91,23 @@ const Schools = () => {
             Empowering the Innovators of Tomorrow
           </h1>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <button className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all duration-300 hover:-translate-y-1">
-              Explore Programs
-            </button>
-            <button className="px-6 py-3 rounded-full bg-white text-blue-600 border-2 border-blue-600 font-semibold hover:bg-blue-50 transition-all duration-300 hover:-translate-y-1">
-              Learn More
-            </button>
+            <a href="#programs">
+              <button className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all duration-300 hover:-translate-y-1">
+                Explore Programs
+              </button>
+            </a>
+            <a href="#programsExtra">
+              <button className="px-6 py-3 rounded-full bg-white text-blue-600 border-2 border-blue-600 font-semibold hover:bg-blue-50 transition-all duration-300 hover:-translate-y-1">
+                Learn More
+              </button>
+            </a>
           </div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 to-blue-50/80 z-0"></div>
       </section>
 
       {/* Our Service Offerings */}
-      <section className="my-16">
+      <section className="my-16" id="programs">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 relative pb-4">
           Our Service Offerings
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></span>
@@ -135,7 +139,7 @@ const Schools = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="my-24">
+      <section className="my-24" id="programsExtra">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 relative pb-4">
           Why Choose Our Programs?
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></span>

@@ -11,22 +11,26 @@ import LoginPage from "./page/LoginPage";
 import Programs from "./page/Programs";
 import Schools from "./page/Schools";
 import Colleges from "./page/Colleges";
+import MentalHealth from "./page/MentalHealth";
 const App = () => {
   return (
     <Router>
       <div className="bg-blue-100">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<LoginPage />} />
-          {/* <Route path="/programs" element={<Programs />} /> */}
-          <Route path="/school" element={<Schools />} />
-          <Route path="/college" element={<Colleges />} />
-        </Routes>
+        <main className="pt-16 md:pt-20">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<LoginPage />} />
+            {/* <Route path="/programs" element={<Programs />} /> */}
+            <Route path="/school" element={<Schools />} />
+            <Route path="/college" element={<Colleges />} />
+            <Route path="/mentalhealth" element={<MentalHealth />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
